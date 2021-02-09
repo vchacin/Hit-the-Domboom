@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #020021;
     font-family: 'Roboto', sans-serif;
@@ -11,4 +12,13 @@ p {
 }
 .btn {
     border-radius: 25px ;
+=======
+
+
+
+main h1{
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80px;
+>>>>>>> refs/remotes/origin/main
 }
