@@ -1,0 +1,40 @@
+body{
+    background: #020021
+}
+footer{
+
+}
+h3{
+    text-align: center;
+    font-size:30px;
+    color:#fff;
+    left: 476px;
+top: 824px;
+bottom:;
+position: ;
+}
+P{
+    text-align: center;
+    color: #555173;
+
+}
+button{
+    
+    float:inline-end;
+    width: 194.26px;
+    height: 63.31px;
+    left: 603.37px;
+    top: 932.84px;
+    
+    background: #FFFFFF;
+    border-radius: 30px;
+     margin-bottom: 20px;
+     position: relative;
+     top: 50%;
+}
+.see-pricing{
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+}
