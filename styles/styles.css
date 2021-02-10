@@ -1,9 +1,11 @@
-body{
-    background: #020021
-}
-footer{
 
+
+
+
+footer p{
+    text-align: center;
 }
+
 h3{
     text-align: center;
     font-size:30px;
@@ -13,7 +15,7 @@ top: 824px;
 bottom:;
 position: ;
 }
-P{
+ {
     text-align: center;
     color: #555173;
 
@@ -37,4 +39,28 @@ button{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
+}
+
+
+body {
+    background-color: #020021;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    color: white
+}
+p {
+    color: #423B5C;
+    font-weight: bold;
+
+}
+.btn {
+    border-radius: 25px ;
+
+
+
+
+main h1{
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80px;
 }
