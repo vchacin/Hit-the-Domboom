@@ -1,26 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #020021;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    color: white
+}
+
+p {
+    color: #423B5C;
+    font-weight: bold;
+
+}
+
+.btn {
+    border-radius: 25px ;
+}
 
 
+main {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
 
+main div.text h1{
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 80px;
+}
 
-footer p{
+main div.text button {
+  background-color: #00F481;
+  width: 230px;
+}
+
+main div.container {
+  width: 100%;
+}
+
+main figure.img-desktop {
+  width: 100%;
+}
+
+main figure.img-mobile {
+  display: none;
+}
+
+nav figure img {
+    width: 30%;
+    height: auto;
+    }
+
+nav {
+    width: 850px;
+    height: 200px;
+    padding: 0;
+    z-index: 2;  
+  }
+
+  nav ul {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+  
+nav li {
+    margin: 2px 4px;
+    list-style: none;
+    align-items: center; 
+  
+    }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #30343f;
+  }
+
+  footer p{
     text-align: center;
 }
 
-h3{
+  h3 {
     text-align: center;
     font-size:30px;
     color:#fff;
     left: 476px;
-top: 824px;
-bottom:;
-position: ;
-}
- {
+    top: 824px;
+    bottom;
+    position;
     text-align: center;
     color: #555173;
-
 }
-button{
+
+button {
     
     float:inline-end;
     width: 194.26px;
@@ -30,37 +109,20 @@ button{
     
     background: #FFFFFF;
     border-radius: 30px;
-     margin-bottom: 20px;
-     position: relative;
-     top: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50%;
 }
+
 .see-pricing{
-    
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
 }
 
 
-body {
-    background-color: #020021;
-    font-family: 'Roboto', sans-serif;
-    margin:0;
-    color: white
-}
-p {
-    color: #423B5C;
-    font-weight: bold;
-
-}
-.btn {
-    border-radius: 25px ;
 
 
 
 
-main h1{
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 80px;
-}
+
