@@ -4,10 +4,10 @@
 
 body {
   background-color: #020021;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto" , sans-serif;
   margin: 0;
   color: white;
-  padding: 20px 40px 20px 40px;
+  padding: 40px 150px 20px 150px;
 }
 
 p {
@@ -16,7 +16,10 @@ p {
 }
 
 .btn {
-  border-radius: 25px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  height: 63.31px;
 }
 
 /*NAVBAR*/
@@ -31,8 +34,12 @@ header {
   justify-content: space-between;
 }
 
+header figure {
+  margin-left: 0;
+}
+
 nav {
-  width: 850px;
+  width: 50%;
   height: auto;
   padding: 0; 
 }
@@ -56,7 +63,11 @@ nav li {
 a {
   text-decoration: none;
   font-weight: 600;
-  color: #30343f;
+  color: white;
+}
+
+a.txtaqua {
+  color: #00C0A8;
 }
 
 /*MAIN*/
@@ -67,11 +78,26 @@ main {
   justify-content: space-between;
 }
 
-main div.text h1 {
+main div h1 {
   font-weight: bold;
   font-size: 4rem;
   line-height: 80px;
+  margin-bottom: 20px;
 }
+
+main div.txtmain{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+}
+
+main p {
+  margin: 0 0 30px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 
 main div button {
   background-color: #00F481;
@@ -83,7 +109,8 @@ main div.container {
 }
 
 main figure.pad-desktop {
-  width: 100%;
+  width: 60%;
+  margin: 150px 0 0 0;
 }
 
 main figure.pad-mobile {
@@ -92,27 +119,31 @@ main figure.pad-mobile {
 
 /*FOOTER*/
 
-footer p{
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+}
+
+footer p {
   text-align: center;
+  margin: 12px 0 16px 0;
 }
 
 footer h3 {
   text-align: center;
-  font-size:30px;
+  font-size: 2.2rem;
   color:#fff;
+  margin: 2px 0 0 0;
 }
 
-button {
+footer button {
   float:inline-end;
   width: 194.26px;
-  height: 63.31px;
-  left: 603.37px;
-  top: 932.84px;
   background: #FFFFFF;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  position: relative;
-  top: 50%;
+ 
 }
 
 .see-pricing {
