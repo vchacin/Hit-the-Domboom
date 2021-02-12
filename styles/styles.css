@@ -28,7 +28,7 @@ p {
   width: 100%;
   max-width: 1024px;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /*NAVBAR*/
@@ -122,6 +122,7 @@ main div button {
 main div.pad-desktop {
   border: 1px solid aqua; /*SACAR DESPUES */
   width: 60%;
+  position: relative;
 }
 
 main div.pad-desktop img {
@@ -130,24 +131,67 @@ main div.pad-desktop img {
 
 /*PADS*/
 
-.pad {
+.pad-container {
+  position: absolute;
+  top: 16px;
+  width: 100%;
+}
 
+.pad {
+  color: #131313;
+  font-weight: bold;
+  border-radius: 50%;
+  background: #131313;
+  border: 3px solid #26242C;
+  box-sizing: border-box;
+}
+
+.pad:hover {
+  color: #26242C;
+  border-color: #26242C;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.58);
 }
 
 .pad-s {
-
+  width: 100px;
+  height: 100px;
 }
 
 .pad-m {
-  
+  width: 130px;
+  height: 130px;
 }
 
-.pad-l {
-  
+.order {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pad-top {
-  
+  border: 1px solid RED; /*SACAR DESPUES */
+  width: 97%;
+}
+
+.pad-middle {
+  border: 1px solid purple; /*SACAR DESPUES */
+  width: 45.5%;
+  top: -57px;
+  z-index: 2;
+}
+
+.pad-center {
+  border: 1px solid pink; /*SACAR DESPUES */
+  width: 81%;
+  top: -135px;
+}
+
+.pad-bottom {
+  border: 1px solid orange; /*SACAR DESPUES */
+  width: 70%;
+  top: -131px;
 }
 
 /*FOOTER*/
@@ -179,5 +223,9 @@ footer button {
   background: #FFFFFF;
 }
 
-
+.see-pricing: hover {
+  background-color: #020021;
+  border: 2px solid #FFFFFF;
+  color: white;
+}
 
