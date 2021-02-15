@@ -157,10 +157,22 @@ main div.pad-desktop img {
   height: 100px;
 }
 
+
+.pad-s1 {
+  width: 100px;
+  height: 100px;
+}
+
 .pad-m {
   width: 130px;
   height: 130px;
 }
+
+.pad-m1 {
+  width: 130px;
+  height: 130px;
+}
+
 
 .order {
   position: relative;
@@ -173,6 +185,7 @@ main div.pad-desktop img {
 .pad-top {
   border: 1px solid RED; /*SACAR DESPUES */
   width: 97%;
+  height: 60%;
 }
 
 .pad-middle {
