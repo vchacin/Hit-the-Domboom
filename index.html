@@ -2,44 +2,68 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!--Styles-->
     <link rel="stylesheet" href="styles/styles.css">
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Hit the Domboom!</title>
 </head>
 <body>
-    <header>
-        <figure>
+    <div class="view">
+        <header>
+            <div>
                 <img src="imagenes/logo.png" alt="logo Domboom">
-        </figure>
+            </div>
+            <nav>
+                <ul>
+                    <a href=""><li>Premium</li></a>
+                    <a href=""><li>Help</li></a>
+                    <a href=""><li>Download</li></a>
+                    <a class="txtaqua" href=""><li>Sign Up</li></a>
+                    <a href=""><li>|</li></a>
+                    <a href=""><li>Log in</li></a>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <il>Logo</il>
-                <il>Premium</il>
-                <il>Help</il>
-                <il>Download</il>
-                <il>Sign up</il>
-                <il>Log in</il>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Music for everyone.</h1>
-        <p>Millions of songs. No credit card needed.</p>
-        <button>Hit the</button>
-        <figure="img-desktop">
-            <img src="imagenes/drumkit.png" alt="imagen de los pads">
-        </figure>
-        <figure>
-            <img src="imagenes/muestra-boton.png" alt="pad unico de mobile">
-        </figure>
-    </main>
-    <footer>
-        <h3 class="premium">Try Premium free for 1 month.</h3>
-        <p>Play millions of songs ad-free, on-demand, and offline.</p>
-        <button class="see-pricing" >SEE PRICING</button>
-    </footer>
+        <main>
+            <div class="txt-desktop">
+                <h1>Music for everyone.</h1>
+                <p>Millions of songs. No credit card needed.</p>
+                <button class="btn">Hit the</button>
+            </div>
+            <div class="pad-desktop">
+                <img src="imagenes/drumkit.png" alt="imagen de los pads">
+                <div class="pad-container">
+                    <div class="order pad-top">
+                        <button class="pad pad-s pad-1">Hit</button>
+                        <button class="pad pad-s pad-2">Hit</button>
+                    </div>
+                    <div class="order pad-middle">
+                        <button class="pad pad-m pad-3">Hit</button>
+                        <button class="pad pad-m pad-4">Hit</button>
+                    </div>
+                    <div class="order pad-center">
+                        <button class="pad pad-s pad-5">Hit</button>
+                        <button class="pad pad-s pad-6">Hit</button>
+                    </div>
+                    <div class="order pad-bottom">
+                        <button class="pad pad-m pad-7">Hit</button>
+                        <button class="pad pad-m pad-8">Hit</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3 class="premium">Try Premium free for 1 month.</h3>
+            <p>Play millions of songs ad-free, on-demand, and offline.</p>
+            <button class="btn see-pricing">SEE PRICING</button>
+        </footer>
+
+    </div>
 </body>
 </html>
