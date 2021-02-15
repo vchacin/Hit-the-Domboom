@@ -2,21 +2,6 @@
   box-sizing: border-box;
 }
 
-@media print {
-  body { font-size: 10pt }
-}
-@media screen {
-  body { font-size: 13px }
-}
-@media screen, print {
-  body { line-height: 1.2 }
-}
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body { line-height: 1.4 }
-}
 body {
   background-color: #020021;
   font-family: "Roboto" , sans-serif;
@@ -177,6 +162,8 @@ main div.pad-desktop img {
   height: 130px;
 }
 
+
+
 .order {
   position: relative;
   display: flex;
@@ -209,6 +196,10 @@ main div.pad-desktop img {
   top: -131px;
 }
 
+.pad-mobile {
+  display: none;
+}
+
 /*FOOTER*/
 
 footer {
@@ -238,9 +229,123 @@ footer button {
   background: #FFFFFF;
 }
 
-.see-pricing: hover {
+.see-pricing:hover {
   background-color: #020021;
   border: 2px solid #FFFFFF;
   color: white;
+}
+
+/*MEDIA QUERYS*/
+
+/*TABLET*/
+
+@media screen and (min-width: 700px) {
+  nav ul {
+    font-size: 14px;
+  }
+  
+  nav li {
+    margin: 0 2px;
+  }
+
+  nav {
+    width: 60%;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (min-width: 480px) {
+  body {
+    padding: 150px 20px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 20px 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header div img {
+    width: 500px;
+    height: auto;
+  }
+
+  main {
+    margin-top: 100px;
+    margin-bottom: 500px;
+    flex-direction: column-reverse;
+  }
+
+  main div.txt-desktop {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  main div.txt-desktop {
+    font-size: 5rem;
+  }
+  
+  main div.pad-desktop {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  main div h1 {
+    font-size: 8rem;
+    line-height: 150px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  main p {
+    font-size: 2rem;
+    line-height: 69px;
+  }
+
+
+  .pad-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pad-9 {
+    width: 500px;
+    height: 500px;
+    box-shadow: 60px 30px 7px rgba(0, 0, 0, 0.58);
+  }
+
+  
+  footer p {
+    font-size: 1.8rem;
+    padding-bottom: 32px;
+  }
+  
+  footer h3 {
+    font-size: 3.5rem;
+  }
+
+  footer button {
+    width: 30%;
+    margin-bottom: 500px;
+  }
+  
+  .see-pricing:hover {
+    background-color: #020021;
+    border: 2px solid #FFFFFF;
+    color: white;
+  }
+
+
 }
 
