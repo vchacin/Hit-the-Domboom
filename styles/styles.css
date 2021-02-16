@@ -70,6 +70,27 @@ nav li {
   align-items: center; 
   margin: 10px;
 }
+.burger{
+   
+     
+position: absolute;
+width: 91px;
+height: 44px;
+left: 100%;
+top: 21px;
+background: #00F481;
+border-radius: 21px;
+}
+.burger:hover{
+  cursor: pointer;
+  background: rgb(13, 13, 192.5);
+}
+.fas {
+  color:white;
+  
+}
+
+
 
 a {
   text-decoration: none;
