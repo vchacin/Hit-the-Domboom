@@ -71,7 +71,7 @@ nav li {
   margin: 10px;
 }
 .burger{
-   
+
      
 position: absolute;
 width: 91px;
@@ -274,7 +274,7 @@ footer button {
 
 /*TABLET*/
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   nav ul {
     font-size: 14px;
   }
