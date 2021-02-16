@@ -70,9 +70,7 @@ nav li {
   align-items: center; 
   margin: 10px;
 }
-.burger{
-
-     
+.burger{   
 position: absolute;
 width: 91px;
 height: 44px;
@@ -80,7 +78,9 @@ left: 100%;
 top: 21px;
 background: #00F481;
 border-radius: 21px;
+display: none;
 }
+
 .burger:hover{
   cursor: pointer;
   background: rgb(13, 13, 192.5);
@@ -287,7 +287,7 @@ footer button {
 
 /*MOBILE*/
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     padding: 150px 20px;
   }
@@ -314,6 +314,10 @@ footer button {
     margin-top: 100px;
     margin-bottom: 500px;
     flex-direction: column-reverse;
+  }
+
+  .burger {
+    display: block;
   }
 
   main div.txt-desktop {
