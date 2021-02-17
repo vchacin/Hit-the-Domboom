@@ -70,6 +70,7 @@ nav li {
   align-items: center; 
   margin: 10px;
 }
+
 .burger{   
 position: absolute;
 width: 91px;
@@ -134,9 +135,18 @@ main p {
 }
 
 
-main div button {
+main div.txt-desktop button {
   background-color: #00F481;
+  border: 2px solid #00F481;
   width: 230px;
+  color: #fff;
+}
+
+main div.txt-desktop button:hover {
+  background-color: #020021;
+  border: 2px solid #00F481;
+  color:#00F481;
+  cursor: pointer;
 }
 
 main div.pad-desktop {
@@ -263,6 +273,7 @@ footer button {
   background-color: #020021;
   border: 2px solid #FFFFFF;
   color: white;
+  cursor: pointer;
 }
 
 /*MEDIA QUERYS*/
