@@ -6,9 +6,10 @@ body {
   background-color: #020021;
   font-family: "Roboto" , sans-serif;
   margin: 0;
-  color: white;
-  padding: 40px 150px 20px;
+  color: 20px;white;
+  padding: 40px 150px 
 }
+ 
 
 p {
   color: #423B5C;
@@ -26,9 +27,12 @@ p {
 
 .view {
   width: 100%;
-  max-width: 1024px;
-  height: 100vh;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
+  overflow: hidden;
+  box-sizing:content-box;
+
 }
 
 /*NAVBAR*/
@@ -45,7 +49,7 @@ header div {
 }
 
 header div img {
-  width: 200px;
+  width: 100px;
   height: auto;
 }
 
@@ -76,8 +80,8 @@ nav li {
 position: absolute;
 width: 91px;
 height: 44px;
-left: 100%;
-top: 21px;
+right: 90%;
+top: 37px;
 background: #00F481;
 border-radius: 21px;
 }
@@ -108,16 +112,18 @@ main {
   width: 100%;
   text-align: left;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10%;
 }
 
 main div h1 {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 70px;
   line-height: 80px;
   margin-bottom: 20px;
   margin-top: 0;
+  font-style: normal;
+  line-height: 80px;
 }
 
 main div.txt-desktop {
@@ -148,6 +154,7 @@ main div.pad-desktop {
 
 main div.pad-desktop img {
   width: 100%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*PADS*/
@@ -165,6 +172,7 @@ main div.pad-desktop img {
   background: #131313;
   border: 3px solid #26242C;
   box-sizing: border-box;
+  max-width: auto;
 }
 
 .pad:hover {
@@ -237,10 +245,11 @@ main div.pad-desktop img {
 footer {
   border: 1px solid RED; /*SACAR DESPUES */
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 65px;
+  margin-top: 7%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 footer p {
@@ -252,13 +261,14 @@ footer h3 {
   text-align: center;
   font-size: 2.2rem;
   color:#fff;
-  margin: 2px 0 0 0;
+  margin: 1px 0 0 0;
 }
 
 footer button {
-  float:inline-end;
+  float:inline-block;
   width: 194.26px;
   background: #FFFFFF;
+  box-sizing: content-box;
 }
 
 .see-pricing:hover {
@@ -271,7 +281,7 @@ footer button {
 
 /*TABLET*/
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   nav ul {
     font-size: 14px;
   }
@@ -287,7 +297,7 @@ footer button {
 
 /*MOBILE*/
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     padding: 150px 20px;
   }
