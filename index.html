@@ -15,23 +15,22 @@
 </head>
 <body>
     <div class="view">
+        <button class="burger">
+            <i class="fas fa-bars"></i>  
+        </button>
         <header>
-            <button class="burger">
-                <i class="fas fa-bars"></i>
-                
-              </button>
 
             <div>
                 <img src="imagenes/logo.png" alt="logo Domboom">
             </div>
             <nav>
                 <ul>
-                    <a href="" class=""><li>Premium</li></a>
-                    <a href=""><li>Help</li></a>
-                    <a href=""><li>Download</li></a>
-                    <a class="txtaqua" href=""><li>Sign Up</li></a>
-                    <a href=""><li>|</li></a>
-                    <a href=""><li>Log in</li></a>
+                    <li><a href="" class="">Premium</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a class="txtaqua" href="">Sign Up</a></li>
+                    <li>|</li>
+                    <li><a href="">Log in</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,39 +39,37 @@
             <div class="txt-desktop">
                 <h1>Music for everyone.</h1>
                 <p>Millions of songs. No credit card needed.</p>
-                <a href="https://www.youtube.com/watch?v=6eBu5s2bVn0"><button class="btn">Hit the</button></a>
+                <a href="https://www.youtube.com/watch?v=6eBu5s2bVn0" target="_blank"><button class="btn" id="CTA">Hit the</button></a>
             </div>
             <div class="pad-desktop">
                 <img src="imagenes/drumkit.png" alt="imagen de los pads">
                 <div class="pad-container">
-                    <div class="order pad-top">
-                        <button class="pad pad-s pad-1">Hit</button>
-                        <button class="pad pad-s pad-2">Hit</button>
-                    </div>
-                    <div class="order pad-middle">
-                        <button class="pad pad-m pad-3">Hit</button>
-                        <button class="pad pad-m pad-4">Hit</button>
-                    </div>
-                    <div class="order pad-center">
-                        <button class="pad pad-s1 pad-5">Hit</button>
-                        <button class="pad pad-s1 pad-6">Hit</button>
-                    </div>
-                    <div class="order pad-bottom">
-                        <button class="pad pad-m1 pad-7">Hit</button>
-                        <button class="pad pad-m1 pad-8">Hit</button>
-                    </div>
+                    <button onclick="playaudio2()" class="pad pad-s pad-1">Hit</button>
+                    <button onclick="playaudio2()" class="pad pad-s pad-2">Hit</button>
+                    <button onclick="playaudio3()" class="pad pad-m pad-3">Hit</button>
+                    <button onclick="playaudio3()" class="pad pad-m pad-4">Hit</button>
+                    <button onclick="playaudio4()" class="pad pad-s pad-5">Hit</button>
+                    <button onclick="playaudio4()" class="pad pad-s pad-6">Hit</button>
+                    <button onclick="playaudio1()" class="pad pad-m pad-7">Hit</button>
+                    <button onclick="playaudio1()" class="pad pad-m pad-8">Hit</button>
                 </div>
             </div>
         </main>
+        <div class="mobile2">
         <div class="pad-mobile">
-            <button class="pad pad-l pad-9">Hit</button>
+            <button onclick="playaudio1()" class="pad pad-l pad-9">Hit</button>
         </div>
         <footer>
             <h3 class="premium">Try Premium free for 1 month.</h3>
             <p>Play millions of songs ad-free, on-demand, and offline.</p>
-            <button class="btn see-pricing">SEE PRICING</button>
+            <button onclick="cambio()" id="seepricing" class="btn see-pricing">SEE PRICING</button>
         </footer>
-
+        </div>
     </div>
+    <audio id="bombo1" src="bombo.wav" > </audio>
+    <audio id="hithat" src="hit-hat.wav" > </audio>
+    <audio id="redoblante" src="redoblante.wav" > </audio>
+    <audio id="crash" src="crash.wav" > </audio>
+    <script src="scripts.js"></script>
 </body>
 </html>
