@@ -390,6 +390,7 @@ footer button {
   main {
     margin: 0;
     height: 90vh;
+    padding-top: 10%;
     max-height: 750px;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -449,7 +450,7 @@ footer button {
   }
 
   footer{
-    margin-top: 10%;
+    margin-top: 20%;
   }
 
   footer p {
