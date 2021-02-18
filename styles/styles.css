@@ -309,6 +309,7 @@ footer button {
   border-color: #00F481;
   box-shadow: 7px 7px 10px rgba(96, 255, 136, 0.44);
   background-color: rgba(96, 255, 136);
+  transition: 0.5s ease-in-out;
 }
 
 /*MEDIA QUERYS*/
