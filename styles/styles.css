@@ -181,6 +181,10 @@ main div.pad-desktop img {
   width: 100%;
 }
 
+main .dobleArrow {
+  display: none;
+}
+
 /*PADS*/
 
 .pad-container {
@@ -423,7 +427,19 @@ footer button {
   
   main p {
     font-size: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 10%;
+  }
+
+  main .dobleArrow {
+    display: inline-block;
+    color:#020021;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main .hitbtn {
+    display: none;
   }
 
   .mobile2 {
