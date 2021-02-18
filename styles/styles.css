@@ -5,6 +5,7 @@
 body {
   background-color: #020021;
   font-family: "Roboto" , sans-serif;
+  font-size: 62.5%;
   margin: 0;
   color: white;
   padding: 7% 10%;
@@ -27,6 +28,7 @@ p {
 .view {
   width: 100%;
   max-width: 1024px;
+  min-width: 320px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -49,13 +51,13 @@ header div img {
   height: auto;
 }
 
-nav {
+header nav {
   width: 50%;
   height: auto;
   padding: 0; 
 }
 
-nav ul {
+header nav ul {
   margin: 0;
   font-size: 17px;
   display: flex;
@@ -64,11 +66,29 @@ nav ul {
   font-weight: bold;
 }
 
-nav li {
+header nav li {
   margin: 2px 4px;
   list-style: none;
   align-items: center; 
   margin: 10px;
+}
+
+header nav ul a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header nav ul a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .burger{   
