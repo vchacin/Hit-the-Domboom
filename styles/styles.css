@@ -8,12 +8,18 @@ body {
   font-size: 62.5%;
   margin: 0;
   color: white;
-  padding: 7% 10%;
 }
 
 p {
   color: #423B5C;
   font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 0 30px 0;
+  font-weight: bold;
+}
+
+button {
+  outline: none;
 }
 
 .btn {
@@ -29,14 +35,12 @@ p {
   width: 100%;
   max-width: 1024px;
   min-width: 320px;
-  height: 100vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 2% auto;
+  position: relative;
 }
 
-/*NAVBAR*/
-
 header {
-  border: 1px solid orange; /*SACAR DESPUES */
   width: 100%;
   display:flex;
   justify-content: space-between;
@@ -44,12 +48,15 @@ header {
 
 header div {
   margin-left: 0;
+  width: 20%;
 }
 
 header div img {
-  width: 200px;
+  width: 100%;
   height: auto;
 }
+
+/*NAVBAR*/
 
 header nav {
   width: 50%;
@@ -59,68 +66,70 @@ header nav {
 
 header nav ul {
   margin: 0;
-  font-size: 17px;
+  padding: 0;
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  font-weight: bold;
+  flex-wrap: nowrap;
 }
 
-header nav li {
-  margin: 2px 4px;
-  list-style: none;
-  align-items: center; 
-  margin: 10px;
+header nav ul a {
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 3s ease-out;
+    position: relative;
 }
 
 header nav ul a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
-
-header nav ul a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-.burger{   
-position: absolute;
-width: 91px;
-height: 44px;
-left: 100%;
-top: 21px;
-background: #00F481;
-border-radius: 21px;
-display: none;
-}
-
-.burger:hover{
-  cursor: pointer;
-  background: rgb(13, 13, 192.5);
-}
-
-.fas {
-  color:white;
   
+header nav ul a:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
-a {
+header nav li {
+  margin: 0 2px;
+  list-style: none;
+  align-items: center; 
+}
+
+header nav ul a {
   text-decoration: none;
   font-weight: 600;
   color: white;
+  opacity: 50%;
+  transition: 0.5s ease-in-out;
 }
 
-a.txtaqua {
-  color: #00C0A8;
+header nav ul a:hover {
+  opacity: 100%;
 }
+
+header nav ul a.txtaqua {
+  color:#00F481;
+}
+
+.burger{   
+  position: absolute;
+  width: 91px;
+  height: 44px;
+  background: #00F481;
+  border-radius: 21px;
+  display: none;
+  color: #020021;
+}
+
 
 /*MAIN*/
 
@@ -132,34 +141,28 @@ main {
   margin-top: 10%;
 }
 
-main div h1 {
-  font-weight: bold;
-  font-size: 4rem;
-  line-height: 80px;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
 main div.txt-desktop {
-  border: 1px solid yellow; /*SACAR DESPUES */
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
 
-main p {
-  margin: 0 0 30px 0;
+main div.txt-desktop h1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3.8rem;
+  line-height: 70px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 
 main div.txt-desktop button {
   background-color: #00F481;
   border: 2px solid #00F481;
-  width: 230px;
+  width: 200px;
   color: #fff;
+  transition: 0.5s ease-in-out;
 }
 
 main div.txt-desktop button:hover {
@@ -170,7 +173,6 @@ main div.txt-desktop button:hover {
 }
 
 main div.pad-desktop {
-  border: 1px solid aqua; /*SACAR DESPUES */
   width: 60%;
   position: relative;
 }
@@ -183,8 +185,9 @@ main div.pad-desktop img {
 
 .pad-container {
   position: absolute;
-  top: 16px;
+  top: 0;
   width: 100%;
+  height: 100%;
 }
 
 .pad {
@@ -194,6 +197,9 @@ main div.pad-desktop img {
   background: #131313;
   border: 3px solid #26242C;
   box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 .pad:hover {
@@ -203,57 +209,55 @@ main div.pad-desktop img {
 }
 
 .pad-s {
-  width: 10%;
-  padding: 7% 8%;
-}
-
-
-.pad-s1 {
-  width: 19%;
-  padding: 8% 9%;
+  width: 8%;
+  height: 0;
+  padding: 8%;
 }
 
 .pad-m {
-  width: 60%;
-  padding: 20% 10%;
+  width: 11%;
+  height: 0;
+  padding: 11%;
 }
 
-.pad-m1 {
-  width: 30%;
-  padding: 13% 15%;
+.pad-1 {
+  top: 4%;
+  left: 1%;
 }
 
-.order {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+.pad-2 {
+  top: 4%;
+  right: 1%;
 }
 
-.pad-top {
-  border: 1px solid RED; /*SACAR DESPUES */
-  width: 97%;
-  height: 60%;
+.pad-3 {
+  top: 14%;
+  left: 26%;
 }
 
-.pad-middle {
-  border: 1px solid purple; /*SACAR DESPUES */
-  width: 47%;
-  top: -57px;
-  z-index: 2;
+.pad-4 {
+  top: 14%;
+  right: 26%;
 }
 
-.pad-center {
-  border: 1px solid pink; /*SACAR DESPUES */
-  width: 81%;
-  top: -140px;
+.pad-5 {
+  top: 28%;
+  left: 9%;
 }
 
-.pad-bottom {
-  border: 1px solid orange; /*SACAR DESPUES */
-  width: 71%;
-  top: -140px;
+.pad-6 {
+  top: 28%;
+  right: 9%;
+}
+
+.pad-7 {
+  top: 52%;
+  left: 14%;
+}
+
+.pad-8 {
+  top: 52%;
+  right: 14%;
 }
 
 .pad-mobile {
@@ -263,7 +267,6 @@ main div.pad-desktop img {
 /*FOOTER*/
 
 footer {
-  border: 1px solid RED; /*SACAR DESPUES */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -278,7 +281,7 @@ footer p {
 
 footer h3 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color:#fff;
   margin: 2px 0 0 0;
 }
@@ -287,6 +290,7 @@ footer button {
   float:inline-end;
   width: 194.26px;
   background: #FFFFFF;
+  transition: 0.5s ease-in-out;
 }
 
 .see-pricing:hover {
@@ -300,56 +304,23 @@ footer button {
 
 /*TABLET*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
-  .pad-container {
-    top: 10px;
-  }
-  
-  
-  .pad-s {
-    padding: 5% 8%;
-  }
-  
-  
-  .pad-s1 {
-    padding: 6% 9%;
-  }
-  
-  .pad-m {
-    padding: 17% 10%;
-  }
-  
-  .pad-m1 {
-    padding: 10% 14%;
-  }
-  
-  .pad-top {
-    height: 60%;
-  }
-  
-  .pad-middle {
-    top: -32px;
-  }
-  
-  .pad-center {
-    top: -78px;
-  }
-  
-  .pad-bottom {
-    top: -78px;
+  body {
+    padding: 20px;
   }
 
-  nav ul {
-    font-size: 12px;
-  }
-  
-  nav li {
-    margin: 0 2px;
-  }
-
-  nav {
+  header nav {
     width: 60%;
+  }
+
+  header nav ul {
+    font-size: 0.8rem;
+  }
+
+  main {
+    margin-top: 8%;
+    flex-direction: column-reverse;
   }
 
   main div h1 {
@@ -358,9 +329,24 @@ footer button {
     margin-bottom: 20px;
     padding-top: 0;
   }
+
+  main div.txt-desktop {
+    width: 60%;
+    margin: 8% auto;
+  }
+  
+  main div.pad-desktop {
+    width: 100%;
+    
+  }
   
   main p {
     font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1.8rem;
+    margin-top: 0;
   }
 
 }
@@ -369,99 +355,123 @@ footer button {
 
 @media screen and (max-width: 480px) {
   body {
-    padding: 150px 20px;
+    padding: 8% 20px;
+  }
+
+  .view {
+    margin: 0;
   }
 
   .btn {
-    font-size: 1.5rem;
-    padding: 20px 0;
-  }
-
-  nav {
-    display: none;
+    font-size: 1.1rem;
+    padding: 8px 24px;
   }
 
   header {
     justify-content: center;
   }
 
-  header div img {
-    width: 300px;
-    height: auto;
-  }
-
-  main {
-    margin-top: 100px;
-    margin-bottom: 500px;
-    flex-direction: column-reverse;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  main div.txt-desktop {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  main div.txt-desktop {
-    font-size: 5rem;
-  }
-  
-  main div.pad-desktop {
+  header div {
+    margin-top: 20%;
     width: 100%;
-    margin-bottom: 100px;
-  }
-
-  main div h1 {
-    font-size: 8rem;
-    line-height: 150px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-  }
-  
-  main p {
-    font-size: 2rem;
-    line-height: 69px;
-  }
-
-
-  .pad-mobile {
-    display: block;
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
   }
 
-  .pad-9 {
-    width: 500px;
-    height: 500px;
-    box-shadow: 60px 30px 7px rgba(0, 0, 0, 0.58);
+  header div img {
+    width: 200px;
+    height: auto;
   }
 
+  nav {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    height: 90vh;
+    max-height: 750px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .burger {
+    display: inline-block;
+    top:0;
+    right:0;
+  }
+
+  main div.txt-desktop {
+    margin: 0 auto;
+    font-size: 5rem;
+    width: 70%;
+  }
   
+  main div.pad-desktop {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+
+  main .pad {
+    display: none;
+  }
+
+  main h1 {
+    line-height: 60px;
+  }
+  
+  main p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .mobile2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .pad-mobile {
+    display: block;
+    width: 70%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .pad-9 {
+    width: 30%;
+    height: 0;
+    padding: 30%;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.58);
+  }
+
+  footer{
+    margin-top: 10%;
+  }
+
   footer p {
-    font-size: 1.8rem;
-    padding-bottom: 32px;
+    font-size: 0.8rem;
+    padding-bottom: 2%;
   }
   
   footer h3 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   footer button {
-    width: 30%;
-    margin-bottom: 500px;
-  }
-  
-  .see-pricing:hover {
-    background-color: #020021;
-    border: 2px solid #FFFFFF;
-    color: white;
+    width: 40%;
   }
 
+  .see-pricing {
+    font-size: 0.9rem;
+    width: 40%;
+    height: auto;
+    padding: 15px 19px;
+  }
 
 }
+
 
