@@ -3,42 +3,50 @@ let bomboaudio = document.getElementById ("bombo1");
     function playaudio1() {
         bomboaudio.currentTime= 0;
         bomboaudio.play();
+
+        changeStyle(activePad);
      }
 
 let hithataudio = document.getElementById ("hithat");
-    function playaudio2() {
+    function playaudio2(activePad) {
         hithataudio.currentTime= 0;
         hithataudio.play();
+
+        activePad.classList.add("press");
+        setTimeout(function(){
+        activePad.classList.remove("press")
+        }, 500);
      }
         
 let redoblanteaudio = document.getElementById ("redoblante");
-    function playaudio3() {
+    function playaudio3(activePad) {
         redoblanteaudio.currentTime= 0;
         redoblanteaudio.play();
+
+       changeStyle(activePad);
+        
     }
 
 let crashaudio = document.getElementById ("crash");
     function playaudio4() {
         crashaudio.currentTime= 0;
         crashaudio.play();
+
+        changeStyle(activePad);
      }
 
 
-function cambio(){
-
-    let btnSeepricing = document.getElementById("seepricing");
-    if (btnSeepricing.innerHTML === "see pricing"){
-        btnSeepricing.innerHTML = "It´s Not for you!";
+function cambio(btnPrice){
+    if (btnPrice.innerHTML === "see pricing"){
+        btnPrice.innerHTML = "It´s Not for you!";
     }else{
-        btnSeepricing.innerHTML = "see pricing";
+        btnPrice.innerHTML = "see pricing";
     }
 }
 
-let activePad = document.getElementById("ho");
-activePad.addEventListener("click", function(){
+function changeStyle(activePad){
     activePad.classList.add("press");
-
-    setTimeout(function(){
-    activePad.classList.remove("press")
-    }, 500);
-})
+        setTimeout(function(){
+        activePad.classList.remove("press")
+        }, 500);
+}
